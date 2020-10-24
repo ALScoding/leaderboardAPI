@@ -1,8 +1,5 @@
 var express = require('express')
-var bodyParser = require('body-parser')
 var app = express()
-
-app.use(bodyParser())
 ​
 const port = process.env.PORT || 3000
 ​

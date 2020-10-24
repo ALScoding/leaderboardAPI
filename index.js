@@ -1,7 +1,7 @@
 var express = require('express')
 var bodyParser = require('body-parser')
 var app = express()
-​
+
 app.use(bodyParser())
 ​
 const port = process.env.PORT || 3000
@@ -18,11 +18,6 @@ app.get('/api/leaderboard', function (req, res) {
     res.send(result)
 })
 ​
-app.post('/api/v1/student', function (req, res, next) {
-    console.log('Entro en post')
-    var name = req.body.name || ''
-    res.send(`El parametro mandado en el body es: ${name}`)
-})
 ​
 let getJson = function (param1, param2) {
 ​
